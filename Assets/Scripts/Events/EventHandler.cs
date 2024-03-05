@@ -1,12 +1,12 @@
-public struct ToolEffect
+public enum ToolEffect
 {
-
+    A, B, C, D
 };
 
 public struct MovementEventData
 {
-    public bool inputX;
-    public bool inputY;
+    public float xInput;
+    public float yInput;
     public bool isWalking;
     public bool isRunning;
     public bool isIdle;
@@ -41,8 +41,9 @@ public static class EventHandler
     public static MovementDelegate MovementEvent;
 
     public static void CallMovementEvent(MovementEventData eventData)
-    { 
-        if (MovementEvent != null) {
+    {
+        if (MovementEvent != null)
+        {
             MovementEvent(eventData);
         }
     }
