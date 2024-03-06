@@ -1,8 +1,3 @@
-public enum ToolEffect
-{
-    A, B, C, D
-};
-
 public struct MovementEventData
 {
     public float xInput;
