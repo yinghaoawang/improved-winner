@@ -41,6 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground1
+    uniqueID: 2605519189
+    locked: 0
+  - name: Ground2
+    uniqueID: 1860562089
+    locked: 0
+  - name: Ground3
+    uniqueID: 3050522757
+    locked: 0
   - name: Instances
     uniqueID: 1633583957
+    locked: 0
+  - name: Front1
+    uniqueID: 1937244431
+    locked: 0
+  - name: Front2
+    uniqueID: 1874421353
     locked: 0
