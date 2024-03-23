@@ -28,9 +28,12 @@ public class Player : SingletonMonobehaviour<Player>
     private bool isSwingingToolDown;
     private ToolEffect toolEffect = ToolEffect.None;
 
+#pragma warning disable 108
     private Rigidbody2D rigidbody2D;
-
+#pragma warning restore 108
+#pragma warning disable 414
     private Direction direction;
+#pragma warning restore 414
     private float movementSpeed;
     private bool _playerInputIsDisabled = false;
     public bool PlayerInputIsDisabled
@@ -133,7 +136,7 @@ public class Player : SingletonMonobehaviour<Player>
             isRunning = true;
             isWalking = false;
             isIdle = false;
-            movementSpeed = Settings.runningSpeed;
+            movementSpeed = Constants.runningSpeed;
 
             if (xInput < 0)
             {
@@ -167,14 +170,14 @@ public class Player : SingletonMonobehaviour<Player>
             isRunning = false;
             isWalking = true;
             isIdle = false;
-            movementSpeed = Settings.walkingSpeed;
+            movementSpeed = Constants.walkingSpeed;
         }
         else
         {
             isRunning = true;
             isWalking = false;
             isIdle = false;
-            movementSpeed = Settings.runningSpeed;
+            movementSpeed = Constants.runningSpeed;
         }
     }
 }
